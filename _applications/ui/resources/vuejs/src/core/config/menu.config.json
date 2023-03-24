@@ -1,0 +1,219 @@
+{
+  "menu": [
+    {
+      "name": "Cấu hình doanh nghiệp",
+      "child": [
+        {
+          "title": "Cơ cấu tổ chức",
+          "quyen_cd": ["to-chuc"],
+          "path": "account.stores",
+          "icon": "/media/icons/duotone/Code/Git3.svg"
+        },
+        {
+          "title": "Quản lý chức danh",
+          "quyen_cd": ["chuc-danh"],
+          "path": "account.job-title",
+          "icon": "/media/icons/duotone/Design/Flatten.svg"
+        },
+        {
+          "title": "Quản lý phân quyền",
+          "quyen_cd": ["quyen"],
+          "path": "account.permissiongroup",
+          "icon": "/media/icons/duotone/Code/Compiling.svg"
+        },
+        {
+          "title": "Quản lý user",
+          "quyen_cd": ["user"],
+          "path": "account.user",
+          "icon": "/media/icons/duotone/General/User.svg"
+        },
+        {
+          "title": "Quản lý loại sản phẩm",
+          "quyen_cd": ["danh-muc"],
+          "path": "account.product-catalog",
+          "icon": "/media/icons/duotone/Code/Settings4.svg"
+        },
+        {
+          "title": "Quản lý nhà cung cấp",
+          "quyen_cd": ["nha-cung-cap"],
+          "path": "account.provider",
+          "icon": "/media/icons/duotone/Home/Box.svg"
+        },
+        {
+          "title": "Quản lý cấu hình kho",
+          "quyen_cd": ["kho"],
+          "path": "account.warehouse",
+          "icon": "/media/icons/duotone/Layout/Layout-top-panel-4.svg"
+        },
+        {
+          "title": "Quản lý sản phẩm",
+          "quyen_cd": ["san-pham"],
+          "path": "account.product",
+          "icon": "/media/icons/duotone/Home/Flower2.svg"
+        },
+        {
+          "title": "Quản lý khuyến mại",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "account.sale",
+          "icon": "/media/icons/duotone/Shopping/Gift.svg"
+        },
+        {
+          "title": "Quản lý thuộc tính sản phẩm",
+          "quyen_cd": ["san-pham"],
+          "path": "account.attribute-group",
+          "icon": "/media/icons/duotone/Shopping/MC.svg"
+        }
+      ]
+    },
+    {
+      "name": "Kho",
+      "child": [
+        {
+          "title": "Quản lý lô",
+          "quyen_cd": ["kho"],
+          "path": "inv.common",
+          "icon": "/media/svg/icons/General/Settings-1.svg"
+        },
+        {
+          "title": "Nhập kho",
+          "quyen_cd": ["kho"],
+          "path": "inv.import",
+          "icon": "/media/svg/icons/Files/Import.svg"
+        },
+        {
+          "title": "Xuất kho",
+          "quyen_cd": ["kho"],
+          "path": "inv.export",
+          "icon": "/media/svg/icons/Files/Export.svg"
+        },
+        {
+          "title": "Tồn kho",
+          "quyen_cd": ["kho"],
+          "path": "inv.stock",
+          "icon": "/media/svg/icons/Communication/Archive.svg"
+        }
+      ]
+    },
+    {
+      "name": "Marketing",
+      "child": [
+        {
+          "title": "Quản lý kênh",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.channels.index",
+          "icon": "/media/icons/duotone/Code/Git3.svg"
+        },
+        {
+          "title": "Quản lý tài khoản quảng cáo",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.payment_accounts.index",
+          "icon": "/media/icons/duotone/Code/Git3.svg"
+        },
+        {
+          "title": "Quản lý chiến dịch",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.campaigns.index",
+          "icon": "/media/icons/duotone/Code/Git3.svg"
+        },
+        {
+          "title": "Quản lý data số Makerting",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.leads.index",
+          "icon": "/media/icons/duotone/Code/Git3.svg"
+        },
+        {
+          "title": "Danh sách data số Nhóm Sale",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.leads.sale_lead",
+          "icon": "/media/icons/duotone/Code/Git3.svg"
+        },
+        {
+          "title": "Danh sách data số nhân viên",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.leads.sale",
+          "icon": "/media/icons/duotone/Code/Git3.svg"
+        },
+        {
+          "title": "Thiết lập bộ kết quả",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.mission.index",
+          "icon": "/media/icons/duotone/Code/Git3.svg"
+        },
+        {
+          "title": "Quản lý data số Makerting",
+          "path": "/marketing/leads",
+          "icon": "/media/icons/duotone/Code/Git3.svg"
+        },
+        {
+          "title": "Danh sách data số Sale",
+          "path": "/marketing/sale-leads",
+          "icon": "/media/icons/duotone/Code/Git3.svg"
+        },
+        {
+          "title": "Thiết lập bộ kết quả",
+          "path": "/mission",
+          "icon": "/media/icons/duotone/Code/Git3.svg"
+        }
+      ]
+    },
+    {
+      "name": "Đơn hàng",
+      "child": [
+        {
+          "title": "Danh sách đơn hàng",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.order.index",
+          "icon": "/media/icons/duotone/Shopping/Box1.svg"
+        },
+        {
+          "title": "Trạng thái đơn hàng",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.order.statuses",
+          "icon": "/media/icons/duotone/Shopping/Box1.svg"
+        },
+        {
+          "title": "Quản lý loại chứng từ thu",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.type_collect_vouchers",
+          "icon": "/media/icons/duotone/Shopping/Box1.svg"
+        },
+        {
+          "title": "Quản lý chứng từ thu",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.receipt_vouchers",
+          "icon": "/media/icons/duotone/Shopping/Box1.svg"
+        },
+        {
+          "title": "Quản lý loại chứng từ chi",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.type-payment-vouchers.index",
+          "icon": "/media/icons/duotone/Shopping/Box1.svg"
+        },
+        {
+          "title": "Quản lý chứng từ chi",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.payment-vouchers.index",
+          "icon": "/media/icons/duotone/Shopping/Box1.svg"
+        },
+        {
+          "title": "Quản lý mẫu in",
+          "quyen_cd": ["khuyen-mai"],
+          "path": "om.order.print_forms",
+          "icon": "/media/icons/duotone/Shopping/Box1.svg"
+        },
+        {
+          "title": "Quản lý lý do hủy đơn",
+          "quyen_cd": ["don-hang"],
+          "path": "om.order-cancel-reasons.index",
+          "icon": "/media/icons/duotone/Shopping/Money.svg"
+        },
+        {
+          "title": "Quản lý đối tác vận chuyển",
+          "quyen_cd": ["don-hang"],
+          "path": "om.shipping-providers.index",
+          "icon": "/media/icons/duotone/Shopping/Loader.svg"
+        }
+      ]
+    }
+  ]
+}

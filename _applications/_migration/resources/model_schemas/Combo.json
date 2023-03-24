@@ -1,0 +1,90 @@
+[
+    {
+        "name": "id",
+        "dbType": "id",
+        "validations": "required|integer",
+        "fillable": true,
+        "searchable": false,
+        "primary": true,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "product_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "related_product_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "quantity",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "prices",
+        "dbType": "float,20",
+        "validations": "required|max:20",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "created_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Product,acc_t_products"
+    }
+]

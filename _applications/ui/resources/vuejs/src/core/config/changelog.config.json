@@ -1,0 +1,29 @@
+{
+    "0.0.0": [
+        {
+            "date": "Ngày 22/10/2021",
+            "changelog": {
+                "new": [
+                    "#7692: Chức năng quản lý sản phẩm",
+                    "#7535: Chức năng quản lý nhóm quyền",
+                    "#7484: Chức năng quản lý user – phân quyền",
+                    "#7478: Chức năng quản lý nhà cung cấp",
+                    "#7476: Chức năng quản lý danh mục sản phẩm",
+                    "#7475: Chức năng quản lý cấu hình kho",
+                    "#7454: Chức năng quản lý tổ chức"
+                ]
+            }
+        },
+        {
+            "date": "Ngày 26/10/2021",
+            "changelog": {
+                "new": [
+                    "#7692: Thay đổi logo"
+                ],
+                "update": [
+                    "#9970: chọn sẵn cơ cấu tổ chức khi chỉnh sửa thông tin user vừa đăng ký mới"
+                ]
+            }
+        }
+    ]
+}

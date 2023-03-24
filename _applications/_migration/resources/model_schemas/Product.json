@@ -1,0 +1,206 @@
+[
+    {
+        "name": "id",
+        "dbType": "id",
+        "validations": "required|integer",
+        "fillable": true,
+        "searchable": false,
+        "primary": true,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "product_catalog_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "volume_unit_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "product_cd",
+        "dbType": "string,50",
+        "validations": "required|string|max:50",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "product_name",
+        "dbType": "string,255",
+        "validations": "required|string|max:255",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "product_display_name",
+        "dbType": "string,255",
+        "validations": "required|string|max:255",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "quantity",
+        "dbType": "float,20",
+        "validations": "required|max:20",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "description",
+        "dbType": "string,1024",
+        "validations": "required|string|max:1024",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "product_avatar",
+        "dbType": "string,1024",
+        "validations": "required|string|max:1024",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "is_sales",
+        "dbType": "enum,yes,no",
+        "validations": "required|string|max:20",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "is_enable_tax",
+        "dbType": "enum,yes,no",
+        "validations": "required|string|max:20",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "tax_percent",
+        "dbType": "float,20",
+        "validations": "required|max:20",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "product_type",
+        "dbType": "enum,combo,single",
+        "validations": "required|string|max:20",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "created_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,ProductEntity,acc_t_product_entities"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,ProductGallery,acc_t_product_gallery"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,RetailProduct,acc_t_retail_products"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,ProductProvider,acc_t_product_provider"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Combo,acc_t_combos"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,VolumeUnit,acc_m_volume_units"
+    }
+]

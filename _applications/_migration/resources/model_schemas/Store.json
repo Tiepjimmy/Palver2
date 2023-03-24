@@ -1,0 +1,174 @@
+[
+    {
+        "name": "id",
+        "dbType": "id",
+        "validations": "required|integer",
+        "fillable": true,
+        "searchable": false,
+        "primary": true,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "province_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "ward_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "ward_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "parent_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "tree_path",
+        "dbType": "string",
+        "validations": "required|string|max:255",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "store_name",
+        "dbType": "string",
+        "validations": "required|string|max:512",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "hotline",
+        "dbType": "string",
+        "validations": "required|string|max:20",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "active_status",
+        "dbType": "enum,active,inactive",
+        "validations": "required|string|max:20",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "address",
+        "dbType": "string",
+        "validations": "required|string|max:255",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "created_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,JobTitle,acc_t_job_titles"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WarehouseStore,acc_t_warehouse_store"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,StorePermissionGroup,acc_t_store_permission_group"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Provider,acc_t_providers"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Province,acc_m_provinces"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,District,acc_m_districts"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Ward,acc_m_wards"
+    }
+]

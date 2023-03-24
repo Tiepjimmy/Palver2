@@ -1,0 +1,28 @@
+//
+// App Style
+//
+
+@import "variables";
+
+// 3rd party plugins css
+@import "~bootstrap-vue/dist/bootstrap-vue.min.css";
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+@import "~socicon/css/socicon.css";
+@import "~animate.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~line-awesome/dist/line-awesome/css/line-awesome.min.css";
+@import "../plugins/flaticon/flaticon.css";
+@import "../plugins/flaticon2/flaticon.css";
+@import "../plugins/keenthemes-icons/font/ki.css";
+@import "~@mdi/font/css/materialdesignicons.min.css";
+@import "~vuetify/dist/vuetify.min.css";
+@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.snow.css';
+@import '~quill/dist/quill.bubble.css';
+@import "pages/login/login-1";
+
+@import "loader";
+@import "reset";
+@import "style";
+
+////////////////////////////////////////////////////////////////

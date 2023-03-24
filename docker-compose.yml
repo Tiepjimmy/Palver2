@@ -1,0 +1,158 @@
+version: "3.7"
+volumes:
+  mariadb_data: {}
+networks:
+  palee-gateway-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "10.0.0.0/24"
+          gateway: 10.0.0.1
+services:
+############################################
+##  API Gateway [REQ]                      #
+############################################
+  api-gateway:
+    image: nginx
+    volumes:
+      - ./api_gateway/haproxy/sites-enabled:/etc/nginx/conf.d
+    networks:
+      default:
+      palee-gateway-network:
+        aliases:
+          - "shop1.api-gateway.docker"
+          - "shop2.api-gateway.docker"
+          - "shop3.api-gateway.docker"
+          - "shop4.api-gateway.docker"
+          - "shop5.api-gateway.docker"
+          - "shop6.api-gateway.docker"
+          - "shop7.api-gateway.docker"
+          - "shop8.api-gateway.docker"
+          - "shop9.api-gateway.docker"
+          - "shop10.api-gateway.docker"
+    depends_on:
+      - account
+      - om
+      - inventory
+############################################
+## reverse proxy [REQ]                     #
+############################################
+  reserved_proxy:
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./reserved_proxy/sites-enabled:/etc/nginx/conf.d
+    depends_on:
+      - api-gateway
+      - ui
+      - sns
+      - s3
+      - cdn
+      - sys
+############################################
+## Tuha-v2                                 #
+############################################
+  ##########################################
+  ## Common                                #
+  ##########################################
+  mariadb:
+    image: mariadb:10.6
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - ./rds/mariadb:/docker-entrypoint-initdb.d
+      - mariadb_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+  redis:
+    image: redis
+    restart: always
+    ports:
+      - 6379:6379
+  s3:
+    container_name: s3
+    restart: always
+    build:
+      context: ./images/ubuntu20-php80
+    volumes:
+      - ./_applications/_simple_storage_service:/var/www
+  sns:
+    container_name: sns
+    restart: always
+    build:
+      context: ./images/ubuntu20-php81
+    volumes:
+      - ./_applications/_simple_notification_service:/var/www
+  cdn :
+    image: nginx
+    ports:
+      - 9981:80
+    volumes:
+      - ./_storages/account/api:/usr/share/nginx/html/account/files
+  sys:
+    container_name: sys
+    restart: always
+    build:
+      context: ./images/ubuntu20-php81
+    volumes:
+      - ./_applications/_system_service:/var/www
+    networks:
+      default:
+      palee-gateway-network:
+      
+############################################
+  migration:
+    container_name: migration
+    restart: always
+    build:
+      context: ./images/ubuntu20-php81
+    volumes:
+      - ./_applications/_migration:/var/www
+  ##########################################
+  ## Domain                                #
+  ##########################################
+  ui:
+    container_name: ui
+    restart: always
+    build:
+      context: ./images/ubuntu20-php81
+    volumes:
+      - ./_applications/ui:/var/www
+    networks:
+      default:
+      palee-gateway-network:
+  om:
+    container_name: om
+    restart: always
+    build:
+      context: ./images/ubuntu20-php81
+    volumes:
+      - ./_applications/om-api:/var/www
+    networks:
+      default:
+      palee-gateway-network:
+  account:
+    container_name: account
+    restart: always
+    build:
+      context: ./images/ubuntu20-php81
+    volumes:
+      - ./_applications/account-api:/var/www
+    networks:
+      default:
+      palee-gateway-network:
+  inventory:
+    container_name: inventory
+    restart: always
+    build:
+      context: ./images/ubuntu20-php81
+    volumes:
+      - ./_applications/inventory-api:/var/www
+    networks:
+      default:
+      palee-gateway-network:
+secrets:
+  kong_postgres_password:
+    file: ./api_gateway/kongd/POSTGRES_PASSWORD

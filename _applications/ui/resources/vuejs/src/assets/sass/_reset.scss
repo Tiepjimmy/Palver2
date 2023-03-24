@@ -1,0 +1,16 @@
+/*---------------------------------------------------------------
+ Reset Main Style
+-----------------------------------------------------------------*/
+//===============================| Reset |============================//
+label {
+    margin-bottom:0 !important;
+}
+
+.login-form .form-control.form-control-solid {
+  background-color: white;
+}
+
+.v-input--is-disabled > .v-input__control > .v-input__slot {
+  background: rgb(0 0 0 / 4%) !important;
+}
+////////////////////////////////////////////////////////////////

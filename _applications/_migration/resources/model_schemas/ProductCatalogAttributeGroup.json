@@ -1,0 +1,58 @@
+[
+    {
+        "name": "product_catalog_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": true,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "attribute_group_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": true,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "created_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,AttributeGroup,acc_t_attribute_groups"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,ProductCatalog,acc_t_product_catalogs"
+    }
+]

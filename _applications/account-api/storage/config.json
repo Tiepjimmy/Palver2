@@ -1,0 +1,82 @@
+{
+    "shop1": {
+        "driver": "mysql",
+        "host": "mariadb",
+        "port": 3306,
+        "database": "shop1",
+        "username": "root",
+        "password": "root"
+    },
+    "shop2": {
+        "driver": "mysql",
+        "host": "mariadb",
+        "port": 3306,
+        "database": "shop2",
+        "username": "root",
+        "password": "root"
+    },
+    "shop3": {
+        "driver": "mysql",
+        "host": "mariadb",
+        "port": 3306,
+        "database": "shop3",
+        "username": "root",
+        "password": "root"
+    },
+    "shop4": {
+        "driver": "mysql",
+        "host": "mariadb",
+        "port": 3306,
+        "database": "shop4",
+        "username": "root",
+        "password": "root"
+    },
+    "shop5": {
+        "driver": "mysql",
+        "host": "mariadb",
+        "port": 3306,
+        "database": "shop5",
+        "username": "root",
+        "password": "root"
+    },
+    "shop6": {
+        "driver": "mysql",
+        "host": "mariadb",
+        "port": 3306,
+        "database": "shop6",
+        "username": "root",
+        "password": "root"
+    },
+    "shop7": {
+        "driver": "mysql",
+        "host": "mariadb",
+        "port": 3306,
+        "database": "shop7",
+        "username": "root",
+        "password": "root"
+    },
+    "shop8": {
+        "driver": "mysql",
+        "host": "mariadb",
+        "port": 3306,
+        "database": "shop8",
+        "username": "root",
+        "password": "root"
+    },
+    "shop9": {
+        "driver": "mysql",
+        "host": "mariadb",
+        "port": 3306,
+        "database": "shop9",
+        "username": "root",
+        "password": "root"
+    },
+    "shop10": {
+        "driver": "mysql",
+        "host": "mariadb",
+        "port": 3306,
+        "database": "shop10",
+        "username": "root",
+        "password": "root"
+    }
+}

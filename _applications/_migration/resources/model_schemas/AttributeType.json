@@ -1,0 +1,66 @@
+[
+    {
+        "name": "id",
+        "dbType": "id",
+        "validations": "required|integer",
+        "fillable": true,
+        "searchable": false,
+        "primary": true,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "attribute_name",
+        "dbType": "string,255",
+        "validations": "required|string|max:255",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "attribute_cd",
+        "dbType": "string,20",
+        "validations": "required|string|max:20",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "created_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,ProductAttribute,attribute_type_id"
+    }
+]

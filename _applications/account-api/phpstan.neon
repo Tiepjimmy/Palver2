@@ -1,0 +1,16 @@
+includes:
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+    - phpstan-baseline.neon
+parameters:
+    level: 5
+    phpVersion: 80000
+    paths:
+        - app/Modules
+    excludePaths:
+            - ./app/Exceptions/PalException.php
+            - ./app/Exceptions/PalValidationException.php
+            - ./app/Modules/Product/Routes/api.php
+            - ./app/Modules/Provider/Routes/api.php
+            - ./app/Modules/Store/Routes/api.php
+            - ./app/Modules/User/Routes/api.php
+    checkMissingIterableValueType: false

@@ -1,0 +1,12 @@
+// auth.js
+export const LOGOUT = 'LOGOUT'
+export const SAVE_TOKEN = 'SAVE_TOKEN'
+export const FETCH_USER = 'FETCH_USER'
+export const FETCH_USER_SUCCESS = 'FETCH_USER_SUCCESS'
+export const FETCH_USER_FAILURE = 'FETCH_USER_FAILURE'
+export const UPDATE_USER = 'UPDATE_USER'
+export const HAS_ACCESS_PERMISSION = 'HAS_ACCESS_PERMISSION'
+export const SAVE_ROUTE_LOGIN = 'SAVE_ROUTE_LOGIN'
+
+export const ACCOUNT_TYPE = 'ACCOUNT_TYPE'
+

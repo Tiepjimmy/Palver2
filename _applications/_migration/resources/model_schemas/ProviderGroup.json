@@ -1,0 +1,94 @@
+[
+    {
+        "name": "id",
+        "dbType": "id",
+        "validations": "required|integer",
+        "fillable": true,
+        "searchable": false,
+        "primary": true,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "store_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "group_name",
+        "dbType": "string,255",
+        "validations": "required|string|max:255",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "group_cd",
+        "dbType": "string,20",
+        "validations": "required|string|max:20",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "note",
+        "dbType": "string,1024",
+        "validations": "required|string|max:1024",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "created_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Provider,acc_t_providers"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Store,acc_t_stores"
+    }
+]

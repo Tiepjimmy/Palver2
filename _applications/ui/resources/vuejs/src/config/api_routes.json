@@ -1,0 +1,284 @@
+{
+  "user": {
+    "profile": "/auth/user/profile",
+    "list": "/proxy/account/v1/user",
+    "roles": "/proxy/account/v1/auth/role",
+    "create": "/proxy/account/v1/user/create",
+    "store": "/proxy/account/v1/user",
+    "show": "/proxy/account/v1/user",
+    "update": "/proxy/account/v1/user",
+    "update-status": "/proxy/account/v1/update-status/user"
+  },
+  "order": {
+    "list": "/proxy/om/v1/orders",
+    "detail": "/proxy/om/v1/orders",
+    "store": "/proxy/om/v1/orders",
+    "update": "/proxy/om/v1/orders",
+    "delete": "/proxy/om/v1/orders",
+    "bulk-approve": "/proxy/om/v1/orders/approve",
+    "approve": "/proxy/om/v1/orders",
+    "un-approve": "/proxy/om/v1/orders/{id}/un-approve",
+    "checkout": "/proxy/om/v1/orders",
+    "list-product": "/proxy/om/v1/order/product/get-by-store",
+    "list-warehouse": "/proxy/om/v1/orders/list-stock",
+    "cancel": "/proxy/om/v1/order/{id}/cancel",
+    "shipping": "/proxy/om/v1/orders/shipping",
+    "shipping-success": "/proxy/om/v1/order/{id}/shipping-success",
+    "refund": "/proxy/om/v1/order/{id}/refund"
+  },
+  "order-payment": {
+    "confirm-payment": "/proxy/om/v1/orders/{id}/payment-confirm",
+    "confirm-multi-payment": "/proxy/om/v1/orders/payment-confirm",
+    "list-payment-by-order": "/proxy/om/v1/orders/{id}/checkouts",
+    "reject-payment": "/proxy/om/v1/orders/{id}/payment-confirm"
+  },
+  "receipt-vouchers": {
+    "all": "/proxy/om/v1/receipt-vouchers",
+    "list": "/proxy/om/v1/receipt-vouchers",
+    "detail": "/proxy/om/v1/receipt-vouchers",
+    "store": "/proxy/om/v1/receipt-vouchers",
+    "update": "/proxy/om/v1/receipt-vouchers",
+    "delete": "/proxy/om/v1/receipt-vouchers",
+    "get-order": "/proxy/om/v1/receipt-vouchers/get-order"
+  },
+  "type-collect-vouchers": {
+    "all": "/proxy/om/v1/type-collect-vouchers",
+    "list": "/proxy/om/v1/type-collect-vouchers",
+    "store": "/proxy/om/v1/type-collect-vouchers",
+    "update": "/proxy/om/v1/type-collect-vouchers",
+    "detail": "/proxy/om/v1/type-collect-vouchers",
+    "delete": "/proxy/om/v1/type-collect-vouchers"
+  },
+  "inv-order": {
+    "detail": "/proxy/inventory/v1/order"
+  },
+  "inv-warehouse": {
+    "index": "/proxy/account/v1/warehouse"
+  },
+  "inv-import-goods-receipts": {
+    "store": "/proxy/inventory/v1/goods-receipt",
+    "update": "/proxy/inventory/v1/goods-receipt",
+    "detail": "/proxy/inventory/v1/goods-receipt",
+    "list": "/proxy/inventory/v1/goods-receipt/list",
+    "print": "/proxy/inventory/v1/goods-receipt/print",
+    "statuses": "/proxy/inventory/v1/goods-receipt/statuses"
+  },
+  "inv-import-goods-receipt-details": {},
+  "inv-import-goods-issues": {
+    "store": "/proxy/inventory/v1/goods-issue",
+    "update": "/proxy/inventory/v1/goods-issue",
+    "detail": "/proxy/inventory/v1/goods-issue",
+    "list": "/proxy/inventory/v1/goods-issue/list",
+    "print": "/proxy/inventory/v1/goods-issue/print",
+    "statuses": "/proxy/inventory/v1/goods-issue/statuses"
+  },
+  "inv-import-goods-issue-details": {},
+  "inv-common-providers": {
+    "list": "/proxy/inventory/v1/store/providers"
+  },
+  "inv-common-products": {
+    "retail-products": "/proxy/inventory/v1/store/retail-products"
+  },
+  "inv-common-lots": {
+    "list": "/proxy/inventory/v1/lot",
+    "store": "/proxy/inventory/v1/lot",
+    "update": "/proxy/inventory/v1/lot",
+    "detail": "/proxy/inventory/v1/lot"
+  },
+  "printed-forms": {
+    "list": "/proxy/om/v1/printed-forms",
+    "store": "/proxy/om/v1/printed-forms",
+    "update": "/proxy/om/v1/printed-forms",
+    "shortcode": "/proxy/om/v1/printed-forms/shortcode",
+    "system-forms": "/proxy/om/v1/printed-forms/system-forms",
+    "detail": "/proxy/om/v1/printed-forms"
+  },
+  "order-status": {
+    "list": "/proxy/om/v1/order-status",
+    "store": "/proxy/om/v1/order-status",
+    "update": "/proxy/om/v1/order-status",
+    "delete": "/proxy/om/v1/order-status",
+    "detail": "/proxy/om/v1/order-status",
+    "sub-status": "proxy/om/v1/order/{id}/sub-statuses"
+  },
+  "inventory": {
+    "list": "/proxy/inventory/list",
+    "detail": "/proxy/inventory/detail",
+    "update": "/proxy/inventory/update",
+    "delete": "/proxy/inventory/delete"
+  },
+  "stores": {
+    "index": "/proxy/account/v1/stores",
+    "create": "/proxy/account/v1/stores/create",
+    "store": "/proxy/account/v1/stores",
+    "show": "/proxy/account/v1/stores",
+    "update": "/proxy/account/v1/stores"
+  },
+  "product-catalogs": {
+    "index": "/proxy/account/v1/product-catalogs",
+    "create": "/proxy/account/v1/product-catalogs/create",
+    "store": "/proxy/account/v1/product-catalogs",
+    "show": "/proxy/account/v1/product-catalogs",
+    "update": "/proxy/account/v1/product-catalogs"
+  },
+  "warehouse": {
+    "index": "/proxy/account/v1/warehouse",
+    "create": "/proxy/account/v1/warehouse/create",
+    "store": "/proxy/account/v1/warehouse",
+    "show": "/proxy/account/v1/warehouse",
+    "update": "/proxy/account/v1/warehouse"
+  },
+  "provinces": {
+    "index": "/proxy/account/v1/provinces"
+  },
+  "districts": {
+    "index": "/proxy/account/v1/districts"
+  },
+  "wards": {
+    "index": "/proxy/account/v1/wards"
+  },
+  "provider": {
+    "list": "/proxy/account/v1/provider",
+    "create": "/proxy/account/v1/provider/create",
+    "store": "/proxy/account/v1/provider",
+    "show": "/proxy/account/v1/provider",
+    "update": "/proxy/account/v1/provider",
+    "province": "/proxy/account/v1/provinces",
+    "district": "/proxy/account/v1/districts",
+    "ward": "/proxy/account/v1/wards",
+    "update-status": "/proxy/account/v1/update-status/provider"
+  },
+  "provider-group": {
+    "store": "/proxy/account/v1/provider-group"
+  },
+  "attribute-group": {
+    "list": "/proxy/account/v1/attribute-group",
+    "create": "/proxy/account/v1/attribute-group/create",
+    "store": "/proxy/account/v1/attribute-group",
+    "show": "/proxy/account/v1/attribute-group",
+    "update": "/proxy/account/v1/attribute-group",
+    "change-status": "/proxy/account/v1/update-status/attribute-group"
+  },
+  "attribute": {
+    "store": "/proxy/account/v1/attribute",
+    "update": "/proxy/account/v1/attribute",
+    "delete": "/proxy/account/v1/attribute",
+    "change-status": "/proxy/account/v1/update-status/attribute"
+  },
+  "job-title": {
+    "list": "/proxy/account/v1/job-title",
+    "create": "/proxy/account/v1/job-title/create",
+    "search": "/proxy/account/v1/job-title",
+    "store": "/proxy/account/v1/job-title",
+    "update": "/proxy/account/v1/job-title"
+  },
+  "channel": {
+    "list": "/proxy/om/v1/channels",
+    "store": "/proxy/om/v1/channels",
+    "update": "/proxy/om/v1/channels",
+    "delete": "/proxy/om/v1/channels",
+    "delete-multi": "/proxy/om/v1/channels",
+    "get-all": "/proxy/om/v1/channels/all-channels",
+    "user-marketing": "/proxy/om/v1/channels/user-marketing"
+  },
+  "sub-channel": {
+    "list": "/proxy/om/v1/sub-channels",
+    "store": "/proxy/om/v1/sub-channels",
+    "update": "/proxy/om/v1/sub-channels",
+    "delete": "/proxy/om/v1/sub-channels",
+    "delete-multi": "/proxy/om/v1/sub-channels",
+    "get-all": "/proxy/om/v1/sub-channels/all-sub-channels",
+    "check-unique-code": "/proxy/om/sub-channels/check-unique"
+  },
+  "payment-account": {
+    "list": "/proxy/om/v1/payment-accounts",
+    "store": "/proxy/om/v1/payment-accounts",
+    "update": "/proxy/om/v1/payment-accounts",
+    "delete": "/proxy/om/v1/payment-accounts",
+    "get-all": "/proxy/om/v1/payment-accounts/all-payment"
+  },
+  "order-cancel-reason": {
+    "list": "/proxy/om/v1/order-cancel-reasons",
+    "store": "/proxy/om/v1/order-cancel-reasons",
+    "update": "/proxy/om/v1/order-cancel-reasons",
+    "delete": "/proxy/om/v1/order-cancel-reasons"
+  },
+  "campaign": {
+    "list": "/proxy/om/v1/campaigns",
+    "store": "/proxy/om/v1/campaigns",
+    "update": "/proxy/om/v1/campaigns",
+    "delete": "/proxy/om/v1/campaigns",
+    "list-bundle": "/proxy/om/v1/campaigns/list-bundle"
+  },
+  "lead": {
+    "list": "/proxy/om/v1/leads",
+    "detail": "/proxy/om/v1/leads",
+    "store": "/proxy/om/v1/leads",
+    "update": "/proxy/om/v1/leads",
+    "delete": "/proxy/om/v1/leads",
+    "update-by-sale": "/proxy/om/v1/leads/update-by-sale",
+    "setting-user-assign": "proxy/om/v1/leads/setting-assign-user",
+    "setting-sale-group-assign": "proxy/om/v1/leads/setting-assign-sale-group",
+    "user-assign": "proxy/om/v1/leads/assign-user",
+    "sale-group-assign": "proxy/om/v1/leads/assign-sale-group",
+    "accept-assign": "proxy/om/v1/leads/accept-assign",
+    "cancel-assign": "proxy/om/v1/leads/cancel-assign",
+    "reject-data": "proxy/om/v1/leads/reject-data",
+    "total-lead-by-status": "proxy/om/v1/leads/get-total-lead-by-status"
+  },
+  "lead-status": {
+    "get-all": "/proxy/om/v1/leads/list-status"
+  },
+  "task": {
+    "list": "/proxy/om/v1/mission-tasks",
+    "store": "/proxy/om/v1/mission-tasks",
+    "update": "/proxy/om/v1/mission-tasks",
+    "delete": "/proxy/om/v1/mission-tasks",
+    "get-all": "/proxy/om/v1/mission-tasks/all-task"
+  },
+  "result": {
+    "list": "/proxy/om/v1/mission-results",
+    "store": "/proxy/om/v1/mission-results",
+    "update": "/proxy/om/v1/mission-results",
+    "delete": "/proxy/om/v1/mission-results",
+    "get-all": "/proxy/om/v1/mission-results/all-result"
+  },
+  "script": {
+    "list": "/proxy/om/v1/mission-scripts",
+    "store": "/proxy/om/v1/mission-scripts",
+    "detail": "/proxy/om/v1/mission-scripts",
+    "update": "/proxy/om/v1/mission-scripts",
+    "delete": "/proxy/om/v1/mission-scripts",
+    "script-detail": "/proxy/om/v1/mission-scripts/get-one-script"
+  },
+  "customer": {
+    "list": "/proxy/om/v1/customers",
+    "store": "/proxy/om/v1/customers",
+    "update": "/proxy/om/v1/customers",
+    "delete": "/proxy/om/v1/customers"
+  },
+  "customer-address": {
+    "list": "proxy/om/v1/customer-address",
+    "store": "/proxy/om/v1/customer-address",
+    "update": "/proxy/om/v1/customer-address",
+    "delete": "/proxy/om/v1/customer-address"
+  },
+  "shipping-provider": {
+    "list": "proxy/om/v1/shipping-provider"
+  },
+  "type-payment-voucher": {
+    "list": "/proxy/om/v1/type-payment-voucher",
+    "store": "/proxy/om/v1/type-payment-voucher",
+    "update": "/proxy/om/v1/type-payment-voucher",
+    "delete": "/proxy/om/v1/type-payment-voucher"
+  },
+  "payment-voucher": {
+    "list": "/proxy/om/v1/payment-voucher",
+    "create": "/proxy/om/v1/payment-voucher/create",
+    "store": "/proxy/om/v1/payment-voucher",
+    "update": "/proxy/om/v1/payment-voucher",
+    "change-status": "/proxy/om/v1/payment-voucher/cancel-status",
+    "detail": "/proxy/om/v1/payment-voucher",
+    "get-order": "/proxy/om/v1/payment-voucher/get-order"
+  }
+}

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[782],{2782:(e,t,n)=>{n.r(t),n.d(t,{default:()=>s});const c={name:"Edit"};const s=(0,n(1900).Z)(c,(function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)}),[function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",[n("h1",[e._v("Edit")])])}],!1,null,"4cbc6ba8",null).exports}}]);

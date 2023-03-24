@@ -1,0 +1,126 @@
+/*---------------------------------------------------------------
+ Custom Style
+-----------------------------------------------------------------*/
+//===============================| Custom |============================//
+
+/** OM **/
+.customer-div {
+}
+
+.om-wp {
+  .om-wp-list-number {
+    max-width: 60px !important;
+  }
+
+  .form-control,
+  .custom-select {
+    border-color: #818181 !important;
+  }
+
+  .v-pagination {
+    justify-content: end !important;
+  }
+
+  .flex-1 {
+    flex: 1;
+  }
+
+  .place-content-end {
+    place-content: flex-end;
+  }
+
+  .flex-basis {
+    flex-basis: 0;
+  }
+  .v-data-table {
+    .v-data-table__wrapper {
+      table {
+        tbody,
+        tfoot,
+        thead {
+          tr {
+            th,
+            td {
+              font-size: 1rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .v-input {
+    font-size: 1.1rem !important;
+  }
+  .om-wp_border {
+    border: thin solid #0000001f;
+  }
+  .om-wp_border-right {
+    border-right: thin solid #0000001f;
+  }
+  .om-wp_border-top {
+    border-top: thin solid #0000001f;
+  }
+  .om-wp_border-left {
+    border-left: thin solid #0000001f;
+  }
+  .om-wp_border-bottom {
+    border-bottom: thin solid #0000001f;
+  }
+  .vm--modal {
+    height: auto !important;
+  }
+  .v-input--checkbox,
+  .v-input--radio-group__input {
+    label {
+      margin-bottom: 0;
+    }
+  }
+  .v-input--selection-controls {
+    margin-top: 0;
+  }
+  .checkbox-table {
+    width: fit-content !important;
+    margin: auto !important;
+  }
+  .w-fit-content {
+    width: fit-content;
+  }
+  .table-order-detail {
+    .v-data-table__wrapper {
+      max-height: 190px;
+      overflow-x: hidden;
+    }
+  }
+  .text-center {
+    text-align: center !important;
+  }
+}
+
+.om-wp-label-modal {
+  font-size: 1rem !important;
+  color: #3f4254 !important;
+}
+.btn-discount {
+  width: 65px;
+}
+.btn-input-dense {
+  height: 39px !important;
+}
+.text-right-input {
+  input {
+    text-align: right;
+  }
+}
+
+.om-wp_hover {
+  &:hover {
+    background-color: #ededed;
+  }
+}
+
+.om-autocomplete-placeholder.v-autocomplete .v-select__slot .v-select__selections input {
+  max-height: initial;
+  padding: 0;
+}
+////////////////////////////////////////////////////////////////

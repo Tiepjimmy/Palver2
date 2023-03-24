@@ -1,0 +1,71 @@
+{
+    "menu" : [
+        {
+            "name" : "Cấu hình doanh nghiệp",
+            "child" : [
+                {
+                    "title" : "Cơ cấu tổ chức",
+                    "quyen_cd" : "to-chuc",
+                    "path"  : "/cau-hinh-doanh-nghiep/to-chuc",
+                    "icon"  :"/media/icons/duotone/Code/Git3.svg"
+                },
+                {
+                    "title" : "Quản lý chức danh",
+                    "quyen_cd" : "chuc-danh",
+                    "path"  : "/cau-hinh-doanh-nghiep/chuc-danh",
+                    "icon"  : "/media/icons/duotone/Design/Flatten.svg"
+                },
+                {
+                    "title" : "Quản lý phân quyền",
+                    "quyen_cd" : "quyen",
+                    "path"  : "/cau-hinh-doanh-nghiep/nhom-quyen",
+                    "icon"  : "/media/icons/duotone/Code/Compiling.svg"
+                },
+                {
+                    "title" : "Quản lý user",
+                    "quyen_cd" : "user",
+                    "path"  : "/cau-hinh-doanh-nghiep/quan-ly-user",
+                    "icon"  : "/media/icons/duotone/General/User.svg"
+                },
+                {
+                    "title" : "Quản lý loại sản phẩm",
+                    "quyen_cd" : "danh-muc",
+                    "path"  : "/cau-hinh-doanh-nghiep/loai-san-pham",
+                    "icon"  : "/media/icons/duotone/Code/Settings4.svg"
+                },
+                {
+                    "title" : "Quản lý nhà cung cấp",
+                    "quyen_cd" : "nha-cung-cap",
+                    "path"  : "/cau-hinh-doanh-nghiep/quan-ly-nha-cung-cap",
+                    "icon"  : "/media/icons/duotone/Home/Box.svg"
+                },
+                {
+                    "title" : "Quản lý cấu hình kho",
+                    "quyen_cd" : "kho",
+                    "path"  : "/cau-hinh-doanh-nghiep/kho",
+                    "icon"  : "/media/icons/duotone/Layout/Layout-top-panel-4.svg"
+                },
+                {
+                    "title" : "Quản lý sản phẩm",
+                    "quyen_cd" :"san-pham",
+                    "path"  : "/cau-hinh-doanh-nghiep/san-pham",
+                    "icon"  : "/media/icons/duotone/Home/Flower2.svg"
+                },
+                {
+                    "title" : "Quản lý khuyến mại",
+                    "quyen_cd" : "khuyen-mai",
+                    "path"  : "/cau-hinh-doanh-nghiep/khuyen-mai",
+                    "icon"  : "/media/icons/duotone/Shopping/Gift.svg"
+                }
+            ]
+        },
+        {
+            "name" : "Kho",
+            "child" : []
+        },
+        {
+            "name" : "Quản lý Đơn hàng",
+            "child" : []
+        }
+    ]
+}

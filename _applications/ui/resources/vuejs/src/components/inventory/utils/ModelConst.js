@@ -1,0 +1,32 @@
+export const GOODS_RECEIPT_STATUS_WAITING = 10;
+export const GOODS_RECEIPT_STATUS_RESOLVED = 20;
+export const GOODS_RECEIPT_STATUS_REJECTED = 30;
+export const GOODS_RECEIPT_STATUS_IMPORTED = 40;
+export const GOODS_RECEIPT_STATUS_CANCELED = 50;
+
+export const GOODS_ISSUE_STATUS_WAITING = 10;
+export const GOODS_ISSUE_STATUS_RESOLVED = 20;
+export const GOODS_ISSUE_STATUS_REJECTED = 30;
+export const GOODS_ISSUE_STATUS_EXPORTED = 40;
+export const GOODS_ISSUE_STATUS_PACKED = 50;
+export const GOODS_ISSUE_STATUS_CANCELED = 60;
+
+export const GOODS_ISSUE_STATUS_NAMES = {
+    [GOODS_ISSUE_STATUS_WAITING]: 'Chờ duyệt',
+    [GOODS_ISSUE_STATUS_RESOLVED]: 'Đã duyệt',
+    [GOODS_ISSUE_STATUS_REJECTED]: 'Từ chối',
+    [GOODS_ISSUE_STATUS_EXPORTED]: 'Xuất kho',
+    [GOODS_ISSUE_STATUS_PACKED]: 'Đóng hàng',
+    [GOODS_ISSUE_STATUS_CANCELED]: 'Hủy',
+};
+
+export const GOODS_ISSUE_TYPE_SELL = 'sell';
+export const GOODS_ISSUE_TYPE_INTERNAL = 'internal';
+export const GOODS_ISSUE_TYPE_CANCEL = 'cancel';
+export const GOODS_ISSUE_TYPE_BALANCE = 'balance';
+export const GOODS_ISSUE_TYPE_NAMES = {
+    [GOODS_ISSUE_TYPE_SELL]: 'Xuất bán',
+    [GOODS_ISSUE_TYPE_INTERNAL]: 'Xuất nội bộ',
+    [GOODS_ISSUE_TYPE_CANCEL]: 'Xuất hủy',
+    [GOODS_ISSUE_TYPE_BALANCE]: 'Xuất cân bằng',
+};

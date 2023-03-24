@@ -1,0 +1,25 @@
+//
+// Login 1
+// Pages SASS files are compiled into separate css files
+//
+
+
+// Initialization of global variables, mixins and functions
+@import "../init";
+
+.auth-account {
+    background-image: url(../../media/bg/bg-tuha.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.logo{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.form-check-input{
+    margin-top: 0.2rem;
+}
+
+

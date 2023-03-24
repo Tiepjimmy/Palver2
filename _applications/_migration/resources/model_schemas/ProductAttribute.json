@@ -1,0 +1,142 @@
+[
+    {
+        "name": "id",
+        "dbType": "id",
+        "validations": "required|integer",
+        "fillable": true,
+        "searchable": false,
+        "primary": true,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "attribute_type_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "default_value_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "attribute_group_id",
+        "dbType": "integer",
+        "validations": "required|integer|max:11",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "attribute_display_name",
+        "dbType": "string,255",
+        "validations": "required|string|max:255",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "attribute_cd",
+        "dbType": "string,20",
+        "validations": "required|string|max:20",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "is_require",
+        "dbType": "boolean",
+        "validations": "required",
+        "fillable": true,
+        "searchable": false,
+        "primary": false,
+        "htmlType": null,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "created_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,ProductEntityAttributeFloat,acc_t_product_entity_attribute_float"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,ProductEntityAttributeVarchar,acc_t_product_entity_attribute_varchar"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,ProductEntityAttributeInt,acc_t_product_entity_attribute_int"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,AttributeFloat,acc_t_attribute_float"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,AttributeInt,acc_t_attribute_int"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,AttributeVarchar,acc_t_attribute_varchar"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,AttributeType,acc_m_attribute_type"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,AttributeGroup,acc_t_attribute_groups"
+    }
+]
